@@ -1,0 +1,18 @@
+﻿@inherits PageLoadingOverlay.App.Features.Home.IndexModel
+@page "/"
+@layout Layout.MainLayout
+
+<!-- Loading overlay that displays until all individual components have loaded their data -->
+<LoadingOverlayView LoadStateManager="@LoadStateManager"></LoadingOverlayView>
+
+<div class="row">
+    <div class="col-3 component-div component-1-div">
+        <Component1View LoadStateManager="@LoadStateManager"></Component1View>
+    </div>
+    <div class="col-3 component-div component-2-div">
+        <Component2View LoadStateManager="@LoadStateManager"></Component2View>
+    </div>
+    <div class="col-3 component-div component-3-div">
+        <Component3View LoadStateManager="@LoadStateManager"></Component3View>
+    </div>
+</div>

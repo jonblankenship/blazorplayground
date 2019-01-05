@@ -1,0 +1,12 @@
+﻿@inherits LoadingOverlayModel
+
+@if (!LoadStateManager.IsLoadingComplete)
+{
+    <div class="loading-overlay">
+        <div class="loader-container">
+            <div class="dot-loader"></div>
+            <div class="dot-loader"></div>
+            <div class="dot-loader"></div>
+        </div>   
+    </div>
+}
