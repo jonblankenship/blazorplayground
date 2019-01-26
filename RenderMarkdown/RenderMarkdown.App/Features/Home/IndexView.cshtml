@@ -1,0 +1,24 @@
+﻿@inherits IndexModel
+@page "/"
+
+
+<div class="container">
+    <div class="row mt-3 mb-3">
+        <div class="col">
+            <h1>@Title</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 form-group">
+            <textarea id="markdownEntry" class="w-100 h-100" bind="@MarkdownContent" placeholder="Enter markdown here..."></textarea>
+            <label>Make the markdown entry area lose focus to update the rendered markdown.</label>
+        </div>
+        <div class="col-md-6">
+            <div class="card w-100 h-100">
+                <div class="card-body">
+                    <Markdown Content="@MarkdownContent"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
