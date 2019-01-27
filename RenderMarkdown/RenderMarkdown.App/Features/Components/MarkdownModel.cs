@@ -1,7 +1,7 @@
-﻿using Markdig;
+﻿using Ganss.XSS;
+using Markdig;
 using Microsoft.AspNetCore.Blazor;
 using Microsoft.AspNetCore.Blazor.Components;
-using RenderMarkdown.App.Utilities;
 
 namespace RenderMarkdown.App.Features.Components
 {
