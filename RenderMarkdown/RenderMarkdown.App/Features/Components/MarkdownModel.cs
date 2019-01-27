@@ -24,7 +24,7 @@ namespace RenderMarkdown.App.Features.Components
 
         public MarkupString HtmlContent { get; private set; }
 
-        public MarkupString ConvertStringToMarkupString(string value)
+        private MarkupString ConvertStringToMarkupString(string value)
         {
             if (!string.IsNullOrWhiteSpace(_content))
             {
